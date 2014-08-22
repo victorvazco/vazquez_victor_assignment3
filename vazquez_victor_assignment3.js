@@ -11,7 +11,7 @@
 var confirmation = "Paying User";
 var word = "User information reviewed and it is as follows for user: ";
 var boolEan = true;
-var levelsArray = ["levelOne", "levelTwo", "levelThree"];
+var levelsArray = ["levelOne ", "levelTwo ", "levelThree "];
 var hackerAlert = false;
 var cost = 2;
 var taxAmount = 1;
@@ -55,19 +55,26 @@ var jsonFunctionString = function(json,string){
 
 var decideFun = function(truth){
     
-    while (cost < 2 && cost>= 0){
+    var gameNotFull = 4
+    
+    while (cost < 2 && cost >= 0){
         
+    while (gameNotFull>0) {
+            gameNotFull --;
+            returned = 'Leveling up';
+        
+        return returned;  
     if (truth === true ){
         cost +1;
     
         var response = "Upgraded version ";
     
     
-        } else {
+         }else {
         
         var response1 = "Lesser game graphics ";
         
-      
+         }
         }
          return response1;
     }
@@ -95,8 +102,8 @@ var arrayLevel = function (level){
     
     var i = levelsArray;
     
-    levelsArray.push('Level Four!');//Array method
-    var newLevel = levelsArray[3];
+    levelsArray.push(' Level Four!');//Array method
+    var newLevel = levelsArray[3] + " now you have "+levelsArray;
     };
     
     return newLevel;
