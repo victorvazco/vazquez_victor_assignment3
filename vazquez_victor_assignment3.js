@@ -14,6 +14,7 @@ var boolEan = true;
 var levelsArray = ["levelOne", "levelTwo", "levelThree"];
 var hackerAlert = false;
 var cost = 2;
+var taxAmount = 1;
 
 levelsArray[1] = 'special level two';
 
@@ -76,6 +77,13 @@ var decideFun = function(truth){
 
 //Math Function
 
+var addAtax = function(tax){
+    
+    math = tax + 1;
+    
+    return math;
+    
+};
 
 
 
@@ -107,6 +115,8 @@ var makeDecide = decideFun(boolEan);
 
 var checkLevels = arrayLevel(levelsArray);
 
+var paySam = addAtax(taxAmount);
+
 //Returned Values
 
 console.log(callStringJson);
@@ -114,3 +124,5 @@ console.log(callStringJson);
 console.log(makeDecide + "is what you will play");
 
 console.log("Congratulations, you unlocked " + checkLevels + "!")
+
+console.log("Uncle Sam get's paid too for a total cost of " + paySam + " dollars in all.");
